@@ -1,3 +1,8 @@
 out/
 cross/bin/
 cross/obj/
+**/bin/
+**/obj/
+.vs/
+*.user
+models/

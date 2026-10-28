@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net10.0-windows</TargetFramework><OutputType>Exe</OutputType></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/IRIS.Voice/IRIS.Voice.csproj" />
+    <ProjectReference Include="../../src/IRIS.Infrastructure/IRIS.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>

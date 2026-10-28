@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net10.0</TargetFramework></PropertyGroup>
+  <ItemGroup><ProjectReference Include="../IRIS.Core/IRIS.Core.csproj" /></ItemGroup>
+  <ItemGroup><ProjectReference Include="../IRIS.AI/IRIS.AI.csproj" /></ItemGroup>
+</Project>

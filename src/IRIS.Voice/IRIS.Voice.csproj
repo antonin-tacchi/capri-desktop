@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <RuntimeIdentifiers>win-x64</RuntimeIdentifiers>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    <RestoreLockedMode>true</RestoreLockedMode>
+  </PropertyGroup>
+  <ItemGroup><ProjectReference Include="../IRIS.Core/IRIS.Core.csproj" /></ItemGroup>
+  <ItemGroup><PackageReference Include="System.Speech" Version="[10.0.14]" /></ItemGroup>
+</Project>

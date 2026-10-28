@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>IRIS</AssemblyName>
+    <Product>IRIS — Intelligent Responsive Interface System</Product>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../IRIS.Core/IRIS.Core.csproj" />
+    <ProjectReference Include="../IRIS.Security/IRIS.Security.csproj" />
+    <ProjectReference Include="../IRIS.Actions/IRIS.Actions.csproj" />
+    <ProjectReference Include="../IRIS.Infrastructure/IRIS.Infrastructure.csproj" />
+    <ProjectReference Include="../IRIS.Memory/IRIS.Memory.csproj" />
+    <ProjectReference Include="../IRIS.Voice/IRIS.Voice.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="../../assets/animations.json" Link="assets/animations.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="../../assets/**/*.png" Exclude="../../assets/readme/**/*.png" Link="assets/%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="../../assets/fonts/ShareTechMono-Regular.ttf" Link="assets/fonts/ShareTechMono-Regular.ttf" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="../../assets/fonts/OFL-ShareTechMono.txt" Link="assets/fonts/OFL-ShareTechMono.txt" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

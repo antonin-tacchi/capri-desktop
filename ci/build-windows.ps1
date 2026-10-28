@@ -1,5 +1,6 @@
 param([string]$OutputDirectory, [switch]$SmokeTest, [int]$SmokeSeconds = 60)
 $ErrorActionPreference = 'Stop'
+throw 'Construction Capri historique désactivée pour IRIS. Utilisez scripts/Build.ps1 ; le code original reste consultable dans Git au tag v0.7.2.'
 $root = Split-Path -Parent $PSScriptRoot
 $framework = Join-Path $env:WINDIR 'Microsoft.NET\Framework64\v4.0.30319'
 $compiler = Join-Path $framework 'csc.exe'
